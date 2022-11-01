@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Index - Criterion.rs</title>
+    <style type="text/css">body {
+    font: 14px Helvetica Neue;
+    text-rendering: optimizelegibility;
+}
+
+.body {
+    width: 960px;
+    margin: auto;
+}
+
+a:link {
+    color: #1F78B4;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#footer {
+    height: 40px;
+    background: #888;
+    color: white;
+    font-size: larger;
+    font-weight: 300;
+}
+
+#footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+#footer p {
+    text-align: center
+}
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h2>Criterion.rs Benchmark Index</h2>
+        See individual benchmark pages below for more details.
+        <ul>
+            <li><a href="Ed25519 signing/index.html">Ed25519 signing</a></li>
+            <li><a href="BLS12381MinSig signing/index.html">BLS12381MinSig signing</a></li>
+            <li><a href="BLS12381MinPk signing/index.html">BLS12381MinPk signing</a></li>
+            <li><a href="BLS12377 signing/index.html">BLS12377 signing</a></li>
+            <li><a href="Sepc256k1 signing/index.html">Sepc256k1 signing</a></li>
+            <li><a href="Ed25519 signature verification/index.html">Ed25519 signature verification</a></li>
+            <li><a href="BLS12381MinSig signature verification/index.html">BLS12381MinSig signature verification</a></li>
+            <li><a href="BLS12381MinPk signature verification/index.html">BLS12381MinPk signature verification</a></li>
+            <li><a href="BLS12377 signature verification/index.html">BLS12377 signature verification</a></li>
+            <li><a href="Sepc256k1 signature verification/index.html">Sepc256k1 signature verification</a></li>
+            <li><a href="verification_comparison/index.html">verification_comparison</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="verification_comparison/BLS12381MinSig aggregate verification/index.html">BLS12381MinSig aggregate verification</a></th>
+                            <th><a href="verification_comparison/BLS12381MinSig batched verification/index.html">BLS12381MinSig batched verification</a></th>
+                            <th><a href="verification_comparison/BLS12381MinPk batched verification/index.html">BLS12381MinPk batched verification</a></th>
+                            <th><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/index.html">BLS12381MinPk aggregate verification with different messages</a></th>
+                            <th><a href="verification_comparison/Ed25519 batched verification/index.html">Ed25519 batched verification</a></th>
+                            <th><a href="verification_comparison/Ed25519 batched verification with different messages/index.html">Ed25519 batched verification with different messages</a></th>
+                            <th><a href="verification_comparison/BLS12377 aggregate verification with different messages/index.html">BLS12377 aggregate verification with different messages</a></th>
+                            <th><a href="verification_comparison/BLS12377 batched verification/index.html">BLS12377 batched verification</a></th>
+                            <th><a href="verification_comparison/BLS12377 batched verification with different messages/index.html">BLS12377 batched verification with different messages</a></th>
+                            <th><a href="verification_comparison/BLS12377 aggregate verification/index.html">BLS12377 aggregate verification</a></th>
+                            <th><a href="verification_comparison/BLS12381MinPk batched verification with different messages/index.html">BLS12381MinPk batched verification with different messages</a></th>
+                            <th><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/index.html">BLS12381MinSig aggregate verification with different messages</a></th>
+                            <th><a href="verification_comparison/BLS12381MinSig batched verification with different messages/index.html">BLS12381MinSig batched verification with different messages</a></th>
+                            <th><a href="verification_comparison/Ed25519 aggregate verification with different messages/index.html">Ed25519 aggregate verification with different messages</a></th>
+                            <th><a href="verification_comparison/BLS12381MinPk aggregate verification/index.html">BLS12381MinPk aggregate verification</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/2048/index.html">2048</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/2048/index.html">verification_comparison/BLS12381MinSig aggregate verification/2048</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/2048/index.html">verification_comparison/BLS12381MinSig batched verification/2048</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/2048/index.html">verification_comparison/BLS12381MinPk batched verification/2048</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/2048/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/2048</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/2048/index.html">verification_comparison/Ed25519 batched verification/2048</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/2048/index.html">verification_comparison/Ed25519 batched verification with different messages/2048</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/2048/index.html">verification_comparison/BLS12377 aggregate verification with different messages/2048</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/2048/index.html">verification_comparison/BLS12377 batched verification/2048</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/2048/index.html">verification_comparison/BLS12377 batched verification with different messages/2048</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/2048/index.html">verification_comparison/BLS12377 aggregate verification/2048</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/2048/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/2048</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/2048/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/2048</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/2048/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/2048</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/2048/index.html">verification_comparison/Ed25519 aggregate verification with different messages/2048</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/2048/index.html">verification_comparison/BLS12381MinPk aggregate verification/2048</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/8192/index.html">8192</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/8192/index.html">verification_comparison/BLS12381MinSig aggregate verification/8192</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/8192/index.html">verification_comparison/BLS12381MinSig batched verification/8192</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/8192/index.html">verification_comparison/BLS12381MinPk batched verification/8192</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/8192/index.html">verification_comparison/Ed25519 batched verification/8192</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/8192/index.html">verification_comparison/Ed25519 batched verification with different messages/8192</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/8192/index.html">verification_comparison/BLS12377 batched verification/8192</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/8192/index.html">verification_comparison/BLS12377 batched verification with different messages/8192</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/8192/index.html">verification_comparison/BLS12377 aggregate verification/8192</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/8192/index.html">verification_comparison/Ed25519 aggregate verification with different messages/8192</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/8192/index.html">verification_comparison/BLS12381MinPk aggregate verification/8192</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/4096/index.html">4096</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/4096/index.html">verification_comparison/BLS12381MinSig aggregate verification/4096</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/4096/index.html">verification_comparison/BLS12381MinSig batched verification/4096</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/4096/index.html">verification_comparison/BLS12381MinPk batched verification/4096</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/4096/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/4096</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/4096/index.html">verification_comparison/Ed25519 batched verification/4096</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/4096/index.html">verification_comparison/Ed25519 batched verification with different messages/4096</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/4096/index.html">verification_comparison/BLS12377 aggregate verification with different messages/4096</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/4096/index.html">verification_comparison/BLS12377 batched verification/4096</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/4096/index.html">verification_comparison/BLS12377 batched verification with different messages/4096</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/4096/index.html">verification_comparison/BLS12377 aggregate verification/4096</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/4096/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/4096</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/4096/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/4096</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/4096/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/4096</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/4096/index.html">verification_comparison/Ed25519 aggregate verification with different messages/4096</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/4096/index.html">verification_comparison/BLS12381MinPk aggregate verification/4096</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/16/index.html">16</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/16/index.html">verification_comparison/BLS12381MinSig aggregate verification/16</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/16/index.html">verification_comparison/BLS12381MinSig batched verification/16</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/16/index.html">verification_comparison/BLS12381MinPk batched verification/16</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/16/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/16</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/16/index.html">verification_comparison/Ed25519 batched verification/16</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/16/index.html">verification_comparison/Ed25519 batched verification with different messages/16</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/16/index.html">verification_comparison/BLS12377 aggregate verification with different messages/16</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/16/index.html">verification_comparison/BLS12377 batched verification/16</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/16/index.html">verification_comparison/BLS12377 batched verification with different messages/16</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/16/index.html">verification_comparison/BLS12377 aggregate verification/16</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/16/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/16</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/16/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/16</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/16/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/16</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/16/index.html">verification_comparison/Ed25519 aggregate verification with different messages/16</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/16/index.html">verification_comparison/BLS12381MinPk aggregate verification/16</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/32/index.html">32</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/32/index.html">verification_comparison/BLS12381MinSig aggregate verification/32</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/32/index.html">verification_comparison/BLS12381MinSig batched verification/32</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/32/index.html">verification_comparison/BLS12381MinPk batched verification/32</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/32/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/32</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/32/index.html">verification_comparison/Ed25519 batched verification/32</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/32/index.html">verification_comparison/Ed25519 batched verification with different messages/32</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/32/index.html">verification_comparison/BLS12377 aggregate verification with different messages/32</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/32/index.html">verification_comparison/BLS12377 batched verification/32</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/32/index.html">verification_comparison/BLS12377 batched verification with different messages/32</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/32/index.html">verification_comparison/BLS12377 aggregate verification/32</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/32/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/32</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/32/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/32</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/32/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/32</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/32/index.html">verification_comparison/Ed25519 aggregate verification with different messages/32</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/32/index.html">verification_comparison/BLS12381MinPk aggregate verification/32</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/64/index.html">64</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/64/index.html">verification_comparison/BLS12381MinSig aggregate verification/64</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/64/index.html">verification_comparison/BLS12381MinSig batched verification/64</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/64/index.html">verification_comparison/BLS12381MinPk batched verification/64</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/64/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/64</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/64/index.html">verification_comparison/Ed25519 batched verification/64</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/64/index.html">verification_comparison/Ed25519 batched verification with different messages/64</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/64/index.html">verification_comparison/BLS12377 aggregate verification with different messages/64</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/64/index.html">verification_comparison/BLS12377 batched verification/64</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/64/index.html">verification_comparison/BLS12377 batched verification with different messages/64</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/64/index.html">verification_comparison/BLS12377 aggregate verification/64</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/64/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/64</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/64/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/64</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/64/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/64</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/64/index.html">verification_comparison/Ed25519 aggregate verification with different messages/64</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/64/index.html">verification_comparison/BLS12381MinPk aggregate verification/64</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/128/index.html">128</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/128/index.html">verification_comparison/BLS12381MinSig aggregate verification/128</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/128/index.html">verification_comparison/BLS12381MinSig batched verification/128</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/128/index.html">verification_comparison/BLS12381MinPk batched verification/128</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/128/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/128</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/128/index.html">verification_comparison/Ed25519 batched verification/128</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/128/index.html">verification_comparison/Ed25519 batched verification with different messages/128</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/128/index.html">verification_comparison/BLS12377 aggregate verification with different messages/128</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/128/index.html">verification_comparison/BLS12377 batched verification/128</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/128/index.html">verification_comparison/BLS12377 batched verification with different messages/128</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/128/index.html">verification_comparison/BLS12377 aggregate verification/128</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/128/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/128</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/128/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/128</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/128/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/128</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/128/index.html">verification_comparison/Ed25519 aggregate verification with different messages/128</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/128/index.html">verification_comparison/BLS12381MinPk aggregate verification/128</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/256/index.html">256</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/256/index.html">verification_comparison/BLS12381MinSig aggregate verification/256</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/256/index.html">verification_comparison/BLS12381MinSig batched verification/256</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/256/index.html">verification_comparison/BLS12381MinPk batched verification/256</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/256/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/256</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/256/index.html">verification_comparison/Ed25519 batched verification/256</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/256/index.html">verification_comparison/Ed25519 batched verification with different messages/256</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/256/index.html">verification_comparison/BLS12377 aggregate verification with different messages/256</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/256/index.html">verification_comparison/BLS12377 batched verification/256</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/256/index.html">verification_comparison/BLS12377 batched verification with different messages/256</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/256/index.html">verification_comparison/BLS12377 aggregate verification/256</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/256/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/256</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/256/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/256</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/256/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/256</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/256/index.html">verification_comparison/Ed25519 aggregate verification with different messages/256</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/256/index.html">verification_comparison/BLS12381MinPk aggregate verification/256</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/512/index.html">512</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/512/index.html">verification_comparison/BLS12381MinSig aggregate verification/512</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/512/index.html">verification_comparison/BLS12381MinSig batched verification/512</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/512/index.html">verification_comparison/BLS12381MinPk batched verification/512</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/512/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/512</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/512/index.html">verification_comparison/Ed25519 batched verification/512</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/512/index.html">verification_comparison/Ed25519 batched verification with different messages/512</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/512/index.html">verification_comparison/BLS12377 aggregate verification with different messages/512</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/512/index.html">verification_comparison/BLS12377 batched verification/512</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/512/index.html">verification_comparison/BLS12377 batched verification with different messages/512</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/512/index.html">verification_comparison/BLS12377 aggregate verification/512</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/512/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/512</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/512/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/512</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/512/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/512</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/512/index.html">verification_comparison/Ed25519 aggregate verification with different messages/512</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/512/index.html">verification_comparison/BLS12381MinPk aggregate verification/512</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="verification_comparison/1024/index.html">1024</a></th>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification/1024/index.html">verification_comparison/BLS12381MinSig aggregate verification/1024</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification/1024/index.html">verification_comparison/BLS12381MinSig batched verification/1024</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification/1024/index.html">verification_comparison/BLS12381MinPk batched verification/1024</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification with different messages/1024/index.html">verification_comparison/BLS12381MinPk aggregate verification with different messages/1024</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification/1024/index.html">verification_comparison/Ed25519 batched verification/1024</a></td>
+                            <td><a href="verification_comparison/Ed25519 batched verification with different messages/1024/index.html">verification_comparison/Ed25519 batched verification with different messages/1024</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification with different messages/1024/index.html">verification_comparison/BLS12377 aggregate verification with different messages/1024</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification/1024/index.html">verification_comparison/BLS12377 batched verification/1024</a></td>
+                            <td><a href="verification_comparison/BLS12377 batched verification with different messages/1024/index.html">verification_comparison/BLS12377 batched verification with different messages/1024</a></td>
+                            <td><a href="verification_comparison/BLS12377 aggregate verification/1024/index.html">verification_comparison/BLS12377 aggregate verification/1024</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk batched verification with different messages/1024/index.html">verification_comparison/BLS12381MinPk batched verification with different messages/1024</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig aggregate verification with different messages/1024/index.html">verification_comparison/BLS12381MinSig aggregate verification with different messages/1024</a></td>
+                            <td><a href="verification_comparison/BLS12381MinSig batched verification with different messages/1024/index.html">verification_comparison/BLS12381MinSig batched verification with different messages/1024</a></td>
+                            <td><a href="verification_comparison/Ed25519 aggregate verification with different messages/1024/index.html">verification_comparison/Ed25519 aggregate verification with different messages/1024</a></td>
+                            <td><a href="verification_comparison/BLS12381MinPk aggregate verification/1024/index.html">verification_comparison/BLS12381MinPk aggregate verification/1024</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="BLS12381MinSig signature aggregation/index.html">BLS12381MinSig signature aggregation</a></li>
+            
+            <ul>
+                <li><a href="BLS12381MinSig signature aggregation/16/index.html">16</a></li>
+                <li><a href="BLS12381MinSig signature aggregation/32/index.html">32</a></li>
+                <li><a href="BLS12381MinSig signature aggregation/64/index.html">64</a></li>
+                <li><a href="BLS12381MinSig signature aggregation/128/index.html">128</a></li>
+                <li><a href="BLS12381MinSig signature aggregation/256/index.html">256</a></li>
+                <li><a href="BLS12381MinSig signature aggregation/512/index.html">512</a></li>
+                <li><a href="BLS12381MinSig signature aggregation/1024/index.html">1024</a></li>
+            </ul>
+            <li><a href="BLS12381MinPk signature aggregation/index.html">BLS12381MinPk signature aggregation</a></li>
+            
+            <ul>
+                <li><a href="BLS12381MinPk signature aggregation/16/index.html">16</a></li>
+                <li><a href="BLS12381MinPk signature aggregation/32/index.html">32</a></li>
+                <li><a href="BLS12381MinPk signature aggregation/64/index.html">64</a></li>
+                <li><a href="BLS12381MinPk signature aggregation/128/index.html">128</a></li>
+                <li><a href="BLS12381MinPk signature aggregation/256/index.html">256</a></li>
+                <li><a href="BLS12381MinPk signature aggregation/512/index.html">512</a></li>
+                <li><a href="BLS12381MinPk signature aggregation/1024/index.html">1024</a></li>
+            </ul>
+            <li><a href="Ed25519 keypair generation/index.html">Ed25519 keypair generation</a></li>
+            <li><a href="BLS12381MinSig keypair generation/index.html">BLS12381MinSig keypair generation</a></li>
+            <li><a href="BLS12381MinPk keypair generation/index.html">BLS12381MinPk keypair generation</a></li>
+            <li><a href="BLS12377 keypair generation/index.html">BLS12377 keypair generation</a></li>
+            <li><a href="Secp256k1 keypair generation/index.html">Secp256k1 keypair generation</a></li>
+            <li><a href="rustc_hex_encode_MSG_20B_ZERO/index.html">rustc_hex_encode_MSG_20B_ZERO</a></li>
+            <li><a href="hex_encode_MSG_20B_ZERO/index.html">hex_encode_MSG_20B_ZERO</a></li>
+            <li><a href="faster_hex_encode_MSG_20B_ZERO/index.html">faster_hex_encode_MSG_20B_ZERO</a></li>
+            <li><a href="faster_hex_encode_fallback_MSG_20B_ZERO/index.html">faster_hex_encode_fallback_MSG_20B_ZERO</a></li>
+            <li><a href="rustc_hex_encode_MSG_32B_ZERO/index.html">rustc_hex_encode_MSG_32B_ZERO</a></li>
+            <li><a href="hex_encode_MSG_32B_ZERO/index.html">hex_encode_MSG_32B_ZERO</a></li>
+            <li><a href="faster_hex_encode_MSG_32B_ZERO/index.html">faster_hex_encode_MSG_32B_ZERO</a></li>
+            <li><a href="faster_hex_encode_fallback_MSG_32B_ZERO/index.html">faster_hex_encode_fallback_MSG_32B_ZERO</a></li>
+            <li><a href="rustc_hex_encode_MSG_64B_ZERO/index.html">rustc_hex_encode_MSG_64B_ZERO</a></li>
+            <li><a href="hex_encode_MSG_64B_ZERO/index.html">hex_encode_MSG_64B_ZERO</a></li>
+            <li><a href="faster_hex_encode_MSG_64B_ZERO/index.html">faster_hex_encode_MSG_64B_ZERO</a></li>
+            <li><a href="faster_hex_encode_fallback_MSG_64B_ZERO/index.html">faster_hex_encode_fallback_MSG_64B_ZERO</a></li>
+            <li><a href="rustc_hex_encode_MSG_20B_RANDOM/index.html">rustc_hex_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="hex_encode_MSG_20B_RANDOM/index.html">hex_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="faster_hex_encode_MSG_20B_RANDOM/index.html">faster_hex_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="faster_hex_encode_fallback_MSG_20B_RANDOM/index.html">faster_hex_encode_fallback_MSG_20B_RANDOM</a></li>
+            <li><a href="rustc_hex_encode_MSG_32B_RANDOM/index.html">rustc_hex_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="hex_encode_MSG_32B_RANDOM/index.html">hex_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="faster_hex_encode_MSG_32B_RANDOM/index.html">faster_hex_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="faster_hex_encode_fallback_MSG_32B_RANDOM/index.html">faster_hex_encode_fallback_MSG_32B_RANDOM</a></li>
+            <li><a href="rustc_hex_encode_MSG_64B_RANDOM/index.html">rustc_hex_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="hex_encode_MSG_64B_RANDOM/index.html">hex_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="faster_hex_encode_MSG_64B_RANDOM/index.html">faster_hex_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="faster_hex_encode_fallback_MSG_64B_RANDOM/index.html">faster_hex_encode_fallback_MSG_64B_RANDOM</a></li>
+            <li><a href="rustc_hex_decode_MSG_20B_ZERO/index.html">rustc_hex_decode_MSG_20B_ZERO</a></li>
+            <li><a href="hex_decode_MSG_20B_ZERO/index.html">hex_decode_MSG_20B_ZERO</a></li>
+            <li><a href="faster_hex_decode_MSG_20B_ZERO/index.html">faster_hex_decode_MSG_20B_ZERO</a></li>
+            <li><a href="faster_hex_decode_unchecked_MSG_20B_ZERO/index.html">faster_hex_decode_unchecked_MSG_20B_ZERO</a></li>
+            <li><a href="faster_hex_decode_fallback_MSG_20B_ZERO/index.html">faster_hex_decode_fallback_MSG_20B_ZERO</a></li>
+            <li><a href="rustc_hex_decode_MSG_32B_ZERO/index.html">rustc_hex_decode_MSG_32B_ZERO</a></li>
+            <li><a href="hex_decode_MSG_32B_ZERO/index.html">hex_decode_MSG_32B_ZERO</a></li>
+            <li><a href="faster_hex_decode_MSG_32B_ZERO/index.html">faster_hex_decode_MSG_32B_ZERO</a></li>
+            <li><a href="faster_hex_decode_unchecked_MSG_32B_ZERO/index.html">faster_hex_decode_unchecked_MSG_32B_ZERO</a></li>
+            <li><a href="faster_hex_decode_fallback_MSG_32B_ZERO/index.html">faster_hex_decode_fallback_MSG_32B_ZERO</a></li>
+            <li><a href="rustc_hex_decode_MSG_64B_ZERO/index.html">rustc_hex_decode_MSG_64B_ZERO</a></li>
+            <li><a href="hex_decode_MSG_64B_ZERO/index.html">hex_decode_MSG_64B_ZERO</a></li>
+            <li><a href="faster_hex_decode_MSG_64B_ZERO/index.html">faster_hex_decode_MSG_64B_ZERO</a></li>
+            <li><a href="faster_hex_decode_unchecked_MSG_64B_ZERO/index.html">faster_hex_decode_unchecked_MSG_64B_ZERO</a></li>
+            <li><a href="faster_hex_decode_fallback_MSG_64B_ZERO/index.html">faster_hex_decode_fallback_MSG_64B_ZERO</a></li>
+            <li><a href="rustc_hex_decode_MSG_20B_RANDOM/index.html">rustc_hex_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="hex_decode_MSG_20B_RANDOM/index.html">hex_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_MSG_20B_RANDOM/index.html">faster_hex_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_unchecked_MSG_20B_RANDOM/index.html">faster_hex_decode_unchecked_MSG_20B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_fallback_MSG_20B_RANDOM/index.html">faster_hex_decode_fallback_MSG_20B_RANDOM</a></li>
+            <li><a href="rustc_hex_decode_MSG_32B_RANDOM/index.html">rustc_hex_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="hex_decode_MSG_32B_RANDOM/index.html">hex_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_MSG_32B_RANDOM/index.html">faster_hex_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_unchecked_MSG_32B_RANDOM/index.html">faster_hex_decode_unchecked_MSG_32B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_fallback_MSG_32B_RANDOM/index.html">faster_hex_decode_fallback_MSG_32B_RANDOM</a></li>
+            <li><a href="rustc_hex_decode_MSG_64B_RANDOM/index.html">rustc_hex_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="hex_decode_MSG_64B_RANDOM/index.html">hex_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_MSG_64B_RANDOM/index.html">faster_hex_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_unchecked_MSG_64B_RANDOM/index.html">faster_hex_decode_unchecked_MSG_64B_RANDOM</a></li>
+            <li><a href="faster_hex_decode_fallback_MSG_64B_RANDOM/index.html">faster_hex_decode_fallback_MSG_64B_RANDOM</a></li>
+            <li><a href="base64_encode_MSG_20B_ZERO/index.html">base64_encode_MSG_20B_ZERO</a></li>
+            <li><a href="base64ct_encode_MSG_20B_ZERO/index.html">base64ct_encode_MSG_20B_ZERO</a></li>
+            <li><a href="radix64_encode_MSG_20B_ZERO/index.html">radix64_encode_MSG_20B_ZERO</a></li>
+            <li><a href="base64_encode_MSG_32B_ZERO/index.html">base64_encode_MSG_32B_ZERO</a></li>
+            <li><a href="base64ct_encode_MSG_32B_ZERO/index.html">base64ct_encode_MSG_32B_ZERO</a></li>
+            <li><a href="radix64_encode_MSG_32B_ZERO/index.html">radix64_encode_MSG_32B_ZERO</a></li>
+            <li><a href="base64_encode_MSG_64B_ZERO/index.html">base64_encode_MSG_64B_ZERO</a></li>
+            <li><a href="base64ct_encode_MSG_64B_ZERO/index.html">base64ct_encode_MSG_64B_ZERO</a></li>
+            <li><a href="radix64_encode_MSG_64B_ZERO/index.html">radix64_encode_MSG_64B_ZERO</a></li>
+            <li><a href="base64_encode_MSG_20B_RANDOM/index.html">base64_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="base64ct_encode_MSG_20B_RANDOM/index.html">base64ct_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="radix64_encode_MSG_20B_RANDOM/index.html">radix64_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="base64_encode_MSG_32B_RANDOM/index.html">base64_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="base64ct_encode_MSG_32B_RANDOM/index.html">base64ct_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="radix64_encode_MSG_32B_RANDOM/index.html">radix64_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="base64_encode_MSG_64B_RANDOM/index.html">base64_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="base64ct_encode_MSG_64B_RANDOM/index.html">base64ct_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="radix64_encode_MSG_64B_RANDOM/index.html">radix64_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="base64_decode_MSG_20B_ZERO/index.html">base64_decode_MSG_20B_ZERO</a></li>
+            <li><a href="base64ct_decode_MSG_20B_ZERO/index.html">base64ct_decode_MSG_20B_ZERO</a></li>
+            <li><a href="radix64_decode_MSG_20B_ZERO/index.html">radix64_decode_MSG_20B_ZERO</a></li>
+            <li><a href="base64_decode_MSG_32B_ZERO/index.html">base64_decode_MSG_32B_ZERO</a></li>
+            <li><a href="base64ct_decode_MSG_32B_ZERO/index.html">base64ct_decode_MSG_32B_ZERO</a></li>
+            <li><a href="radix64_decode_MSG_32B_ZERO/index.html">radix64_decode_MSG_32B_ZERO</a></li>
+            <li><a href="base64_decode_MSG_64B_ZERO/index.html">base64_decode_MSG_64B_ZERO</a></li>
+            <li><a href="base64ct_decode_MSG_64B_ZERO/index.html">base64ct_decode_MSG_64B_ZERO</a></li>
+            <li><a href="radix64_decode_MSG_64B_ZERO/index.html">radix64_decode_MSG_64B_ZERO</a></li>
+            <li><a href="base64_decode_MSG_20B_RANDOM/index.html">base64_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="base64ct_decode_MSG_20B_RANDOM/index.html">base64ct_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="radix64_decode_MSG_20B_RANDOM/index.html">radix64_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="base64_decode_MSG_32B_RANDOM/index.html">base64_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="base64ct_decode_MSG_32B_RANDOM/index.html">base64ct_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="radix64_decode_MSG_32B_RANDOM/index.html">radix64_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="base64_decode_MSG_64B_RANDOM/index.html">base64_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="base64ct_decode_MSG_64B_RANDOM/index.html">base64ct_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="radix64_decode_MSG_64B_RANDOM/index.html">radix64_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="bs58_encode_MSG_20B_ZERO/index.html">bs58_encode_MSG_20B_ZERO</a></li>
+            <li><a href="base58_encode_MSG_20B_ZERO/index.html">base58_encode_MSG_20B_ZERO</a></li>
+            <li><a href="rust_base58_encode_MSG_20B_ZERO/index.html">rust_base58_encode_MSG_20B_ZERO</a></li>
+            <li><a href="bs58_encode_MSG_32B_ZERO/index.html">bs58_encode_MSG_32B_ZERO</a></li>
+            <li><a href="base58_encode_MSG_32B_ZERO/index.html">base58_encode_MSG_32B_ZERO</a></li>
+            <li><a href="rust_base58_encode_MSG_32B_ZERO/index.html">rust_base58_encode_MSG_32B_ZERO</a></li>
+            <li><a href="bs58_encode_MSG_64B_ZERO/index.html">bs58_encode_MSG_64B_ZERO</a></li>
+            <li><a href="base58_encode_MSG_64B_ZERO/index.html">base58_encode_MSG_64B_ZERO</a></li>
+            <li><a href="rust_base58_encode_MSG_64B_ZERO/index.html">rust_base58_encode_MSG_64B_ZERO</a></li>
+            <li><a href="bs58_encode_MSG_20B_RANDOM/index.html">bs58_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="base58_encode_MSG_20B_RANDOM/index.html">base58_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="rust_base58_encode_MSG_20B_RANDOM/index.html">rust_base58_encode_MSG_20B_RANDOM</a></li>
+            <li><a href="bs58_encode_MSG_32B_RANDOM/index.html">bs58_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="base58_encode_MSG_32B_RANDOM/index.html">base58_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="rust_base58_encode_MSG_32B_RANDOM/index.html">rust_base58_encode_MSG_32B_RANDOM</a></li>
+            <li><a href="bs58_encode_MSG_64B_RANDOM/index.html">bs58_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="base58_encode_MSG_64B_RANDOM/index.html">base58_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="rust_base58_encode_MSG_64B_RANDOM/index.html">rust_base58_encode_MSG_64B_RANDOM</a></li>
+            <li><a href="bs58_decode_MSG_20B_ZERO/index.html">bs58_decode_MSG_20B_ZERO</a></li>
+            <li><a href="base58_decode_MSG_20B_ZERO/index.html">base58_decode_MSG_20B_ZERO</a></li>
+            <li><a href="rust_base58_decode_MSG_20B_ZERO/index.html">rust_base58_decode_MSG_20B_ZERO</a></li>
+            <li><a href="bs58_decode_MSG_32B_ZERO/index.html">bs58_decode_MSG_32B_ZERO</a></li>
+            <li><a href="base58_decode_MSG_32B_ZERO/index.html">base58_decode_MSG_32B_ZERO</a></li>
+            <li><a href="rust_base58_decode_MSG_32B_ZERO/index.html">rust_base58_decode_MSG_32B_ZERO</a></li>
+            <li><a href="bs58_decode_MSG_64B_ZERO/index.html">bs58_decode_MSG_64B_ZERO</a></li>
+            <li><a href="base58_decode_MSG_64B_ZERO/index.html">base58_decode_MSG_64B_ZERO</a></li>
+            <li><a href="rust_base58_decode_MSG_64B_ZERO/index.html">rust_base58_decode_MSG_64B_ZERO</a></li>
+            <li><a href="bs58_decode_MSG_20B_RANDOM/index.html">bs58_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="base58_decode_MSG_20B_RANDOM/index.html">base58_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="rust_base58_decode_MSG_20B_RANDOM/index.html">rust_base58_decode_MSG_20B_RANDOM</a></li>
+            <li><a href="bs58_decode_MSG_32B_RANDOM/index.html">bs58_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="base58_decode_MSG_32B_RANDOM/index.html">base58_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="rust_base58_decode_MSG_32B_RANDOM/index.html">rust_base58_decode_MSG_32B_RANDOM</a></li>
+            <li><a href="bs58_decode_MSG_64B_RANDOM/index.html">bs58_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="base58_decode_MSG_64B_RANDOM/index.html">base58_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="rust_base58_decode_MSG_64B_RANDOM/index.html">rust_base58_decode_MSG_64B_RANDOM</a></li>
+            <li><a href="Conversions Arkworks -_ Blst/index.html">Conversions Arkworks -&gt; Blst</a></li>
+            
+            <ul>
+                <li><a href="Conversions Arkworks -_ Blst/BlsFr -_ blst_fr/index.html">BlsFr -&gt; blst_fr</a></li>
+                <li><a href="Conversions Arkworks -_ Blst/Fq -_ blst_fp/index.html">Fq -&gt; blst_fp</a></li>
+                <li><a href="Conversions Arkworks -_ Blst/Fq2 -_ blst_fp2/index.html">Fq2 -&gt; blst_fp2</a></li>
+                <li><a href="Conversions Arkworks -_ Blst/Fq6 -_ blst_fp6/index.html">Fq6 -&gt; blst_fp6</a></li>
+                <li><a href="Conversions Arkworks -_ Blst/Fq12 -_ blst_fp12/index.html">Fq12 -&gt; blst_fp12</a></li>
+                <li><a href="Conversions Arkworks -_ Blst/G1Affine -_ blst_p1_affine/index.html">G1Affine -&gt; blst_p1_affine</a></li>
+                <li><a href="Conversions Arkworks -_ Blst/G2Affine -_ blst_p2_affine/index.html">G2Affine -&gt; blst_p2_affine</a></li>
+            </ul>
+            <li><a href="Conversions Blst -_ Arkworks/index.html">Conversions Blst -&gt; Arkworks</a></li>
+            
+            <ul>
+                <li><a href="Conversions Blst -_ Arkworks/blst_fr -_ BlsFr/index.html">blst_fr -&gt; BlsFr</a></li>
+                <li><a href="Conversions Blst -_ Arkworks/blst_fp -_ Fp/index.html">blst_fp -&gt; Fp</a></li>
+                <li><a href="Conversions Blst -_ Arkworks/blst_fp2 -_ Fq2/index.html">blst_fp2 -&gt; Fq2</a></li>
+                <li><a href="Conversions Blst -_ Arkworks/blst_fp6 -_ Fq6/index.html">blst_fp6 -&gt; Fq6</a></li>
+                <li><a href="Conversions Blst -_ Arkworks/blst_fp12 -_ Fq12/index.html">blst_fp12 -&gt; Fq12</a></li>
+                <li><a href="Conversions Blst -_ Arkworks/blst_p1_affine -_ G1Affine/index.html">blst_p1_affine -&gt; G1Affine</a></li>
+                <li><a href="Conversions Blst -_ Arkworks/blst_p2_affine -_ G2Affine/index.html">blst_p2_affine -&gt; G2Affine</a></li>
+            </ul>
+            <li><a href="BLS12-381 Verification/index.html">BLS12-381 Verification</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="BLS12-381 Verification/Groth16 process verifying key/index.html">Groth16 process verifying key</a></th>
+                            <th><a href="BLS12-381 Verification/Groth16 verify with processed vk/index.html">Groth16 verify with processed vk</a></th>
+                            <th><a href="BLS12-381 Verification/Groth16 end-to-end verify/index.html">Groth16 end-to-end verify</a></th>
+                            <th><a href="BLS12-381 Verification/BLST-based Groth16 process verifying key/index.html">BLST-based Groth16 process verifying key</a></th>
+                            <th><a href="BLS12-381 Verification/BLST-based Groth16 verify with processed vk/index.html">BLST-based Groth16 verify with processed vk</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-381 Verification/8/index.html">8</a></th>
+                            <td><a href="BLS12-381 Verification/Groth16 process verifying key/8/index.html">BLS12-381 Verification/Groth16 process verifying key/8</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 verify with processed vk/8/index.html">BLS12-381 Verification/Groth16 verify with processed vk/8</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 end-to-end verify/8/index.html">BLS12-381 Verification/Groth16 end-to-end verify/8</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 process verifying key/8/index.html">BLS12-381 Verification/BLST-based Groth16 process verifying key/8</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 verify with processed vk/8/index.html">BLS12-381 Verification/BLST-based Groth16 verify with processed vk/8</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-381 Verification/9/index.html">9</a></th>
+                            <td><a href="BLS12-381 Verification/Groth16 process verifying key/9/index.html">BLS12-381 Verification/Groth16 process verifying key/9</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 verify with processed vk/9/index.html">BLS12-381 Verification/Groth16 verify with processed vk/9</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 end-to-end verify/9/index.html">BLS12-381 Verification/Groth16 end-to-end verify/9</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 process verifying key/9/index.html">BLS12-381 Verification/BLST-based Groth16 process verifying key/9</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 verify with processed vk/9/index.html">BLS12-381 Verification/BLST-based Groth16 verify with processed vk/9</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-381 Verification/10/index.html">10</a></th>
+                            <td><a href="BLS12-381 Verification/Groth16 process verifying key/10/index.html">BLS12-381 Verification/Groth16 process verifying key/10</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 verify with processed vk/10/index.html">BLS12-381 Verification/Groth16 verify with processed vk/10</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 end-to-end verify/10/index.html">BLS12-381 Verification/Groth16 end-to-end verify/10</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 process verifying key/10/index.html">BLS12-381 Verification/BLST-based Groth16 process verifying key/10</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 verify with processed vk/10/index.html">BLS12-381 Verification/BLST-based Groth16 verify with processed vk/10</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-381 Verification/11/index.html">11</a></th>
+                            <td><a href="BLS12-381 Verification/Groth16 process verifying key/11/index.html">BLS12-381 Verification/Groth16 process verifying key/11</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 verify with processed vk/11/index.html">BLS12-381 Verification/Groth16 verify with processed vk/11</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 end-to-end verify/11/index.html">BLS12-381 Verification/Groth16 end-to-end verify/11</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 process verifying key/11/index.html">BLS12-381 Verification/BLST-based Groth16 process verifying key/11</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 verify with processed vk/11/index.html">BLS12-381 Verification/BLST-based Groth16 verify with processed vk/11</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-381 Verification/12/index.html">12</a></th>
+                            <td><a href="BLS12-381 Verification/Groth16 process verifying key/12/index.html">BLS12-381 Verification/Groth16 process verifying key/12</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 verify with processed vk/12/index.html">BLS12-381 Verification/Groth16 verify with processed vk/12</a></td>
+                            <td><a href="BLS12-381 Verification/Groth16 end-to-end verify/12/index.html">BLS12-381 Verification/Groth16 end-to-end verify/12</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 process verifying key/12/index.html">BLS12-381 Verification/BLST-based Groth16 process verifying key/12</a></td>
+                            <td><a href="BLS12-381 Verification/BLST-based Groth16 verify with processed vk/12/index.html">BLS12-381 Verification/BLST-based Groth16 verify with processed vk/12</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="BN254 Verification/index.html">BN254 Verification</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="BN254 Verification/Groth16 process verifying key/index.html">Groth16 process verifying key</a></th>
+                            <th><a href="BN254 Verification/Groth16 verify with processed vk/index.html">Groth16 verify with processed vk</a></th>
+                            <th><a href="BN254 Verification/Groth16 end-to-end verify/index.html">Groth16 end-to-end verify</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="BN254 Verification/8/index.html">8</a></th>
+                            <td><a href="BN254 Verification/Groth16 process verifying key/8/index.html">BN254 Verification/Groth16 process verifying key/8</a></td>
+                            <td><a href="BN254 Verification/Groth16 verify with processed vk/8/index.html">BN254 Verification/Groth16 verify with processed vk/8</a></td>
+                            <td><a href="BN254 Verification/Groth16 end-to-end verify/8/index.html">BN254 Verification/Groth16 end-to-end verify/8</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BN254 Verification/9/index.html">9</a></th>
+                            <td><a href="BN254 Verification/Groth16 process verifying key/9/index.html">BN254 Verification/Groth16 process verifying key/9</a></td>
+                            <td><a href="BN254 Verification/Groth16 verify with processed vk/9/index.html">BN254 Verification/Groth16 verify with processed vk/9</a></td>
+                            <td><a href="BN254 Verification/Groth16 end-to-end verify/9/index.html">BN254 Verification/Groth16 end-to-end verify/9</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BN254 Verification/10/index.html">10</a></th>
+                            <td><a href="BN254 Verification/Groth16 process verifying key/10/index.html">BN254 Verification/Groth16 process verifying key/10</a></td>
+                            <td><a href="BN254 Verification/Groth16 verify with processed vk/10/index.html">BN254 Verification/Groth16 verify with processed vk/10</a></td>
+                            <td><a href="BN254 Verification/Groth16 end-to-end verify/10/index.html">BN254 Verification/Groth16 end-to-end verify/10</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BN254 Verification/11/index.html">11</a></th>
+                            <td><a href="BN254 Verification/Groth16 process verifying key/11/index.html">BN254 Verification/Groth16 process verifying key/11</a></td>
+                            <td><a href="BN254 Verification/Groth16 verify with processed vk/11/index.html">BN254 Verification/Groth16 verify with processed vk/11</a></td>
+                            <td><a href="BN254 Verification/Groth16 end-to-end verify/11/index.html">BN254 Verification/Groth16 end-to-end verify/11</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BN254 Verification/12/index.html">12</a></th>
+                            <td><a href="BN254 Verification/Groth16 process verifying key/12/index.html">BN254 Verification/Groth16 process verifying key/12</a></td>
+                            <td><a href="BN254 Verification/Groth16 verify with processed vk/12/index.html">BN254 Verification/Groth16 verify with processed vk/12</a></td>
+                            <td><a href="BN254 Verification/Groth16 end-to-end verify/12/index.html">BN254 Verification/Groth16 end-to-end verify/12</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="BLS12-377 Verification/index.html">BLS12-377 Verification</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="BLS12-377 Verification/Groth16 process verifying key/index.html">Groth16 process verifying key</a></th>
+                            <th><a href="BLS12-377 Verification/Groth16 verify with processed vk/index.html">Groth16 verify with processed vk</a></th>
+                            <th><a href="BLS12-377 Verification/Groth16 end-to-end verify/index.html">Groth16 end-to-end verify</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-377 Verification/8/index.html">8</a></th>
+                            <td><a href="BLS12-377 Verification/Groth16 process verifying key/8/index.html">BLS12-377 Verification/Groth16 process verifying key/8</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 verify with processed vk/8/index.html">BLS12-377 Verification/Groth16 verify with processed vk/8</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 end-to-end verify/8/index.html">BLS12-377 Verification/Groth16 end-to-end verify/8</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-377 Verification/9/index.html">9</a></th>
+                            <td><a href="BLS12-377 Verification/Groth16 process verifying key/9/index.html">BLS12-377 Verification/Groth16 process verifying key/9</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 verify with processed vk/9/index.html">BLS12-377 Verification/Groth16 verify with processed vk/9</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 end-to-end verify/9/index.html">BLS12-377 Verification/Groth16 end-to-end verify/9</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-377 Verification/10/index.html">10</a></th>
+                            <td><a href="BLS12-377 Verification/Groth16 process verifying key/10/index.html">BLS12-377 Verification/Groth16 process verifying key/10</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 verify with processed vk/10/index.html">BLS12-377 Verification/Groth16 verify with processed vk/10</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 end-to-end verify/10/index.html">BLS12-377 Verification/Groth16 end-to-end verify/10</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-377 Verification/11/index.html">11</a></th>
+                            <td><a href="BLS12-377 Verification/Groth16 process verifying key/11/index.html">BLS12-377 Verification/Groth16 process verifying key/11</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 verify with processed vk/11/index.html">BLS12-377 Verification/Groth16 verify with processed vk/11</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 end-to-end verify/11/index.html">BLS12-377 Verification/Groth16 end-to-end verify/11</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="BLS12-377 Verification/12/index.html">12</a></th>
+                            <td><a href="BLS12-377 Verification/Groth16 process verifying key/12/index.html">BLS12-377 Verification/Groth16 process verifying key/12</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 verify with processed vk/12/index.html">BLS12-377 Verification/Groth16 verify with processed vk/12</a></td>
+                            <td><a href="BLS12-377 Verification/Groth16 end-to-end verify/12/index.html">BLS12-377 Verification/Groth16 end-to-end verify/12</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="BLS12-381 Proving/index.html">BLS12-381 Proving</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="BLS12-381 Proving/Groth16 prove/index.html">Groth16 prove</a></th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td><a href="BLS12-381 Proving/Groth16 prove/8/index.html">BLS12-381 Proving/Groth16 prove/8</a></td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td><a href="BLS12-381 Proving/Groth16 prove/9/index.html">BLS12-381 Proving/Groth16 prove/9</a></td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td><a href="BLS12-381 Proving/Groth16 prove/10/index.html">BLS12-381 Proving/Groth16 prove/10</a></td>
+                        </tr>
+                        <tr>
+                            <th>11</th>
+                            <td><a href="BLS12-381 Proving/Groth16 prove/11/index.html">BLS12-381 Proving/Groth16 prove/11</a></td>
+                        </tr>
+                        <tr>
+                            <th>12</th>
+                            <td><a href="BLS12-381 Proving/Groth16 prove/12/index.html">BLS12-381 Proving/Groth16 prove/12</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="BN254 Proving/index.html">BN254 Proving</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="BN254 Proving/Groth16 prove/index.html">Groth16 prove</a></th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td><a href="BN254 Proving/Groth16 prove/8/index.html">BN254 Proving/Groth16 prove/8</a></td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td><a href="BN254 Proving/Groth16 prove/9/index.html">BN254 Proving/Groth16 prove/9</a></td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td><a href="BN254 Proving/Groth16 prove/10/index.html">BN254 Proving/Groth16 prove/10</a></td>
+                        </tr>
+                        <tr>
+                            <th>11</th>
+                            <td><a href="BN254 Proving/Groth16 prove/11/index.html">BN254 Proving/Groth16 prove/11</a></td>
+                        </tr>
+                        <tr>
+                            <th>12</th>
+                            <td><a href="BN254 Proving/Groth16 prove/12/index.html">BN254 Proving/Groth16 prove/12</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="BLS12-377 Proving/index.html">BLS12-377 Proving</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="BLS12-377 Proving/Groth16 prove/index.html">Groth16 prove</a></th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td><a href="BLS12-377 Proving/Groth16 prove/8/index.html">BLS12-377 Proving/Groth16 prove/8</a></td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td><a href="BLS12-377 Proving/Groth16 prove/9/index.html">BLS12-377 Proving/Groth16 prove/9</a></td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td><a href="BLS12-377 Proving/Groth16 prove/10/index.html">BLS12-377 Proving/Groth16 prove/10</a></td>
+                        </tr>
+                        <tr>
+                            <th>11</th>
+                            <td><a href="BLS12-377 Proving/Groth16 prove/11/index.html">BLS12-377 Proving/Groth16 prove/11</a></td>
+                        </tr>
+                        <tr>
+                            <th>12</th>
+                            <td><a href="BLS12-377 Proving/Groth16 prove/12/index.html">BLS12-377 Proving/Groth16 prove/12</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>This report was generated by <a href="https://github.com/bheisler/cargo-criterion">cargo-criterion</a></p>
+    </div>
+</body>
+</html>
